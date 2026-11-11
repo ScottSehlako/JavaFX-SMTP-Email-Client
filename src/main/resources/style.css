@@ -1,0 +1,107 @@
+/* ============================================
+   JavaFX Mailer — Blue / Grey / White palette
+   ============================================ */
+
+.root {
+    -fx-background-color: #F4F6F8;   /* light grey canvas */
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ---------- Header ---------- */
+.title-label {
+    -fx-background-color: #1E2A38;   /* near-black navy */
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 21px;
+    -fx-font-weight: bold;
+    -fx-padding: 18 22 18 22;
+}
+
+/* ---------- Form card ---------- */
+.form-box {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: #D0D7DE;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.07), 10, 0, 0, 3);
+    -fx-margin: 16;
+}
+
+/* ---------- Labels ---------- */
+.form-box .label {
+    -fx-text-fill: #3A4A5A;          /* dark grey-blue */
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 6 0 1 0;
+}
+
+/* ---------- Text inputs ---------- */
+.text-field,
+.password-field,
+.text-area {
+    -fx-background-color: #F9FAFB;
+    -fx-border-color: #C9D1D9;
+    -fx-border-radius: 7;
+    -fx-background-radius: 7;
+    -fx-padding: 9 11;
+    -fx-text-fill: #1E2A38;
+    -fx-prompt-text-fill: #9AA6B2;
+    -fx-font-size: 13px;
+}
+
+.text-field:focused,
+.password-field:focused,
+.text-area:focused {
+    -fx-border-color: #7EB8DA;       /* baby blue focus border */
+    -fx-border-width: 2;
+    -fx-background-color: #FFFFFF;
+}
+
+/* TextArea inner content area */
+.text-area .content {
+    -fx-background-color: #F9FAFB;
+    -fx-background-radius: 6;
+}
+
+.text-area:focused .content {
+    -fx-background-color: #FFFFFF;
+}
+
+/* ---------- Send button ---------- */
+.send-button {
+    -fx-background-color: #2C7BE5;   /* main blue */
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 11 30;
+    -fx-background-radius: 9;
+    -fx-cursor: hand;
+}
+
+.send-button:hover {
+    -fx-background-color: #1A68D1;
+}
+
+.send-button:pressed {
+    -fx-background-color: #1452A8;
+}
+
+.send-button:disabled {
+    -fx-opacity: 0.55;
+}
+
+/* ---------- Status text ---------- */
+.status-label {
+    -fx-text-fill: #6B7A8A;
+    -fx-font-size: 13px;
+}
+
+/* ---------- Baby-blue scrollbar accent ---------- */
+.scroll-bar .thumb {
+    -fx-background-color: #A8D4F0;
+    -fx-background-radius: 5;
+}
+
+.scroll-bar .track {
+    -fx-background-color: #EDF1F5;
+}
